@@ -58,12 +58,12 @@ export function Navbar({ onBookClick }: NavbarProps) {
           <span className={`font-serif font-bold text-2xl tracking-tight transition-colors duration-300 ${
             isScrolled ? "text-primary" : "text-white text-shadow-md"
           }`}>
-            Hotel Shree Ganesh
+            Goswami Mutt
           </span>
           <span className={`text-[10px] uppercase tracking-[0.2em] font-medium transition-colors duration-300 ${
             isScrolled ? "text-muted-foreground" : "text-white/80 text-shadow-sm"
           }`}>
-            Luxury & Comfort
+            Rameshwaram, Tamil Nadu
           </span>
         </a>
 

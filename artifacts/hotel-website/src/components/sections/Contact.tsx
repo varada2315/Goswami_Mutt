@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 export function Contact() {
@@ -47,10 +47,15 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-foreground text-lg mb-1">Our Location</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    123 Temple Road, Near Main Square<br />
-                    City Name, State 123456, India
-                  </p>
+                  <a
+                    href="https://share.google/iDCs58GqxOiISGaVf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground leading-relaxed hover:text-primary transition-colors underline underline-offset-4"
+                  >
+                    Goswami Mutt, Rameshwaram,<br />
+                    Tamil Nadu, India
+                  </a>
                 </div>
               </div>
               
@@ -63,19 +68,6 @@ export function Contact() {
                   <p className="text-muted-foreground leading-relaxed">
                     <a href="tel:+919876543210" className="hover:text-primary transition-colors">+91 98765 43210</a><br/>
                     <a href="tel:+919876543211" className="hover:text-primary transition-colors">+91 98765 43211</a>
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-background border border-border shadow-sm flex items-center justify-center text-primary shrink-0">
-                  <Mail className="w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-foreground text-lg mb-1">Email Address</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    <a href="mailto:info@hotelshreeganesh.com" className="hover:text-primary transition-colors">info@hotelshreeganesh.com</a><br/>
-                    <a href="mailto:bookings@hotelshreeganesh.com" className="hover:text-primary transition-colors">bookings@hotelshreeganesh.com</a>
                   </p>
                 </div>
               </div>

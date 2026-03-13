@@ -32,18 +32,18 @@ export function Hero({ onBookClick }: HeroProps) {
         >
           <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-4">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-white text-sm font-medium tracking-wide uppercase">Premium Hospitality</span>
+            <span className="text-white text-sm font-medium tracking-wide uppercase">Pilgrim Accommodations · Rameshwaram</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white text-shadow-lg leading-tight">
             Welcome to <br/>
             <span className="text-primary text-shadow-none bg-clip-text text-transparent bg-gradient-to-r from-primary via-[#E5C158] to-primary">
-              Hotel Shree Ganesh
+              Goswami Mutt
             </span>
           </h1>
           
           <p className="text-lg md:text-2xl text-white/90 font-light max-w-2xl mx-auto text-shadow-sm leading-relaxed">
-            Experience unparalleled comfort, traditional elegance, and warm hospitality in the heart of the city.
+            Affordable and comfortable accommodations for pilgrims visiting the sacred Ramanathaswamy Temple, just 500 metres away.
           </p>
           
           <motion.div 

@@ -1,6 +1,6 @@
 import React from "react";
 import { getAssetUrl } from "@/lib/utils";
-import { MapPin, Phone, Mail, Instagram, Facebook, Twitter } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -40,23 +40,12 @@ export function Footer() {
           {/* Brand Col */}
           <div className="space-y-6">
             <div>
-              <h3 className="font-serif text-3xl font-bold text-white mb-1">Hotel Shree Ganesh</h3>
-              <p className="text-primary text-sm uppercase tracking-widest font-medium">Luxury & Comfort</p>
+              <h3 className="font-serif text-3xl font-bold text-white mb-1">Goswami Mutt</h3>
+              <p className="text-primary text-sm uppercase tracking-widest font-medium">Rameshwaram, Tamil Nadu</p>
             </div>
             <p className="text-sm leading-relaxed text-white/60">
-              Experience the perfect blend of traditional Indian hospitality and modern comfort. Your home away from home for both pilgrimage and leisure.
+              A religious organization dedicated to providing affordable and comfortable accommodations for pilgrims visiting the renowned Ramanathaswamy Temple, just 500 metres away.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300">
-                <Twitter className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -109,22 +98,20 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-1" />
-                <span className="text-sm leading-relaxed">
-                  123 Temple Road, Near Main Square<br />
-                  City Name, State 123456<br />
-                  India
-                </span>
+                <a
+                  href="https://share.google/iDCs58GqxOiISGaVf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm leading-relaxed hover:text-primary transition-colors underline underline-offset-2"
+                >
+                  Goswami Mutt, Rameshwaram,<br />
+                  Tamil Nadu, India
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a href="tel:+919876543210" className="text-sm hover:text-primary transition-colors">
                   +91 98765 43210
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a href="mailto:info@hotelshreeganesh.com" className="text-sm hover:text-primary transition-colors">
-                  info@hotelshreeganesh.com
                 </a>
               </li>
             </ul>
@@ -134,7 +121,7 @@ export function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-white/50 text-center md:text-left">
-            &copy; {currentYear} Hotel Shree Ganesh. All rights reserved.
+            &copy; {currentYear} Goswami Mutt. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-white/50">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

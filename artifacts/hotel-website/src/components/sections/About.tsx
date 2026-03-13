@@ -31,22 +31,41 @@ export function About() {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground leading-tight">
-              A Legacy of <span className="italic text-primary/90">Warm Hospitality</span>
+              A Home for <span className="italic text-primary/90">Pilgrims &amp; Devotees</span>
             </h2>
+
+            {/* Google Reviews Badge */}
+            <div className="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-card border border-border shadow-sm">
+              <div className="flex gap-0.5">
+                {[1,2,3,4].map(i => (
+                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                ))}
+                <svg className="w-5 h-5" viewBox="0 0 24 24" style={{fill:'url(#half)'}}>
+                  <defs>
+                    <linearGradient id="half"><stop offset="50%" stopColor="hsl(var(--primary))"/><stop offset="50%" stopColor="hsl(var(--muted))"/></linearGradient>
+                  </defs>
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                </svg>
+              </div>
+              <div>
+                <span className="font-bold text-foreground text-lg">4.2</span>
+                <span className="text-muted-foreground text-sm ml-1">· 801 Google reviews</span>
+              </div>
+            </div>
             
             <div className="prose prose-lg text-muted-foreground prose-p:leading-relaxed">
               <p>
-                Welcome to Hotel Shree Ganesh, your serene sanctuary located ideally for both devout pilgrims and busy business travelers. We pride ourselves on offering a perfect blend of traditional Indian warmth and contemporary comfort.
+                Goswami Madam Trust is a religious organization located in Rameshwaram, Tamil Nadu, dedicated to providing affordable and comfortable accommodations for pilgrims visiting the renowned Ramanathaswamy Temple.
               </p>
               <p>
-                From the moment you step through our doors, our dedicated staff is committed to making your stay memorable. Whether you're here to visit the sacred temples, conduct business, or simply relax, our thoughtfully designed rooms and premium amenities ensure a restful experience.
+                Situated approximately 500 metres from the temple, the trust offers a range of facilities to ensure a pleasant stay for devotees. Whether you're here for a single night or an extended pilgrimage, our welcoming environment and thoughtful amenities make your spiritual journey comfortable.
               </p>
             </div>
 
             <div className="pt-4 grid grid-cols-2 gap-8 border-t border-border mt-8">
               <div>
-                <h4 className="text-3xl font-serif font-bold text-primary mb-1">15+</h4>
-                <p className="text-sm text-muted-foreground uppercase tracking-wider font-medium">Years of Service</p>
+                <h4 className="text-3xl font-serif font-bold text-primary mb-1">500m</h4>
+                <p className="text-sm text-muted-foreground uppercase tracking-wider font-medium">From Ramanathaswamy Temple</p>
               </div>
               <div>
                 <h4 className="text-3xl font-serif font-bold text-primary mb-1">24/7</h4>

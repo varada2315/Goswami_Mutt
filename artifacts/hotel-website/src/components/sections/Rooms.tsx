@@ -17,7 +17,7 @@ export function Rooms({ onBookClick }: RoomsProps) {
       description: "Our finest accommodation featuring modern furnishings, premium marble flooring, elegant gold and white decor, and ultimate comfort.",
       capacity: "2-3 Guests",
       bedType: "2 Premium Beds",
-      price: "₹3,499",
+      price: "₹1,750",
       amenities: [
         { icon: <Wind className="w-4 h-4" />, label: "Air Conditioned" },
         { icon: <Wifi className="w-4 h-4" />, label: "Free High-Speed WiFi" },
@@ -33,7 +33,7 @@ export function Rooms({ onBookClick }: RoomsProps) {
       description: "Comfortable and spacious room with rich wooden furniture, tray ceilings, and maroon accent pillows for a cozy stay.",
       capacity: "2-4 Guests",
       bedType: "2 Double Beds",
-      price: "₹2,499",
+      price: "₹1,500",
       amenities: [
         { icon: <Wind className="w-4 h-4" />, label: "Air Conditioned" },
         { icon: <Wifi className="w-4 h-4" />, label: "Free WiFi" },
@@ -49,7 +49,7 @@ export function Rooms({ onBookClick }: RoomsProps) {
       description: "Budget-friendly comfort featuring wooden furniture, fan cooling, and clean, comfortable beds with traditional red sheets.",
       capacity: "1-3 Guests",
       bedType: "3 Single Beds",
-      price: "₹1,499",
+      price: "₹1,000",
       amenities: [
         { icon: <Users className="w-4 h-4" />, label: "Family Friendly" },
         { icon: <Wifi className="w-4 h-4" />, label: "Free WiFi" },

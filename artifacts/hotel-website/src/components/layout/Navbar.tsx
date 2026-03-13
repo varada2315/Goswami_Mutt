@@ -87,13 +87,13 @@ export function Navbar({ onBookClick }: NavbarProps) {
           
           <div className="flex items-center gap-4 border-l border-border/30 pl-6">
             <a 
-              href="tel:+919876543210" 
+              href="tel:+918505904123" 
               className={`flex items-center gap-2 text-sm font-medium transition-colors duration-300 hover:text-primary ${
                 isScrolled ? "text-foreground" : "text-white text-shadow-sm"
               }`}
             >
               <Phone className="w-4 h-4" />
-              <span>+91 98765 43210</span>
+              <span>+91 85059 04123</span>
             </a>
             <Button 
               variant="gold" 
@@ -137,11 +137,11 @@ export function Navbar({ onBookClick }: NavbarProps) {
                 </a>
               ))}
               <div className="pt-4 flex flex-col gap-4">
-                <a href="tel:+919876543210" className="flex items-center gap-3 text-foreground font-medium">
+                <a href="tel:+918505904123" className="flex items-center gap-3 text-foreground font-medium">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                     <Phone className="w-5 h-5" />
                   </div>
-                  +91 98765 43210
+                  +91 85059 04123
                 </a>
                 <Button variant="gold" size="lg" className="w-full mt-2" onClick={onBookClick}>
                   Book Your Stay

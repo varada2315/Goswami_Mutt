@@ -1,0 +1,14 @@
+packages:
+  "framer-motion": "For elegant, premium scroll animations and reveals"
+  "clsx": "For conditional class name merging"
+  "tailwind-merge": "For merging tailwind classes safely"
+
+images:
+  - path: "artifacts/hotel-website/public/images/mandala-pattern.png"
+    description: "A subtle, highly elegant, thin-lined golden Indian mandala pattern on a completely transparent background. Minimalist luxury style."
+    aspect_ratio: "1:1"
+
+notes:
+  - This is a pure frontend implementation of a single-page hotel website.
+  - Using existing images provided in the public folder + 1 generated decorative asset.
+  - "Book Now" buttons will open a fully-functional (mock) booking modal.

@@ -15,22 +15,22 @@ export function Amenities() {
   ];
 
   return (
-    <section id="amenities" className="py-24 bg-background">
+    <section id="amenities" className="py-16 sm:py-20 lg:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 sm:gap-8 mb-12 sm:mb-16">
           <div className="max-w-2xl space-y-4">
             <div className="inline-flex items-center gap-4">
               <span className="w-12 h-0.5 bg-primary"></span>
               <span className="text-primary font-medium tracking-wider uppercase text-sm">Facilities</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">Hotel Amenities</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-foreground">Hotel Amenities</h2>
           </div>
-          <p className="text-muted-foreground text-lg max-w-md md:text-right">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-md md:text-right">
             We provide everything you need for a comfortable and hassle-free stay.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {amenities.map((item, index) => (
             <motion.div
               key={index}
@@ -38,7 +38,7 @@ export function Amenities() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-card p-8 rounded-2xl border border-border shadow-sm hover:shadow-md hover:border-primary/30 transition-all group"
+              className="bg-card p-6 sm:p-8 rounded-2xl border border-border shadow-sm hover:shadow-md hover:border-primary/30 transition-all group"
             >
               <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                 {item.icon}

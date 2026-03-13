@@ -4,7 +4,7 @@ import { getAssetUrl } from "@/lib/utils";
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-background relative overflow-hidden">
+    <section id="about" className="py-16 sm:py-20 lg:py-24 bg-background relative overflow-hidden">
       {/* Decorative element */}
       <div 
         className="absolute -right-64 -top-64 w-[800px] h-[800px] opacity-[0.02] pointer-events-none"
@@ -16,7 +16,7 @@ export function About() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center">
           
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -30,7 +30,7 @@ export function About() {
               <span className="text-primary font-medium tracking-wider uppercase text-sm">About Us</span>
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-foreground leading-tight">
               A Home for <span className="italic text-primary/90">Pilgrims &amp; Devotees</span>
             </h2>
 
@@ -53,16 +53,16 @@ export function About() {
               </div>
             </div>
             
-            <div className="prose prose-lg text-muted-foreground prose-p:leading-relaxed">
+            <div className="prose prose-base sm:prose-lg text-muted-foreground prose-p:leading-relaxed">
               <p>
-                Goswami Madam Trust is a religious organization located in Rameshwaram, Tamil Nadu, dedicated to providing affordable and comfortable accommodations for pilgrims visiting the renowned Ramanathaswamy Temple.
+                Goswami Mutt (Goswami Madam Trust) is a religious organization in Rameshwaram, Tamil Nadu, dedicated to providing affordable and comfortable accommodations for pilgrims visiting the renowned Ramanathaswamy Temple.
               </p>
               <p>
                 Situated approximately 500 metres from the temple, the trust offers a range of facilities to ensure a pleasant stay for devotees. Whether you're here for a single night or an extended pilgrimage, our welcoming environment and thoughtful amenities make your spiritual journey comfortable.
               </p>
             </div>
 
-            <div className="pt-4 grid grid-cols-2 gap-8 border-t border-border mt-8">
+            <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 border-t border-border mt-8">
               <div>
                 <h4 className="text-3xl font-serif font-bold text-primary mb-1">500m</h4>
                 <p className="text-sm text-muted-foreground uppercase tracking-wider font-medium">From Ramanathaswamy Temple</p>
@@ -84,14 +84,14 @@ export function About() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
               <img 
                 src={getAssetUrl('hero-hotel.jpeg')} 
-                alt="Hotel Exterior" 
+                alt="Goswami Mutt exterior in Rameshwaram" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 border-2 border-primary/20 rounded-2xl m-2 pointer-events-none" />
             </div>
             
             {/* Floating badge */}
-            <div className="absolute -bottom-8 -left-8 bg-card p-6 rounded-2xl shadow-xl border border-border max-w-[240px]">
+            <div className="absolute bottom-4 left-4 sm:-bottom-8 sm:-left-8 bg-card p-4 sm:p-6 rounded-2xl shadow-xl border border-border max-w-[220px] sm:max-w-[240px]">
               <div className="flex gap-1 text-primary mb-2">
                 {[1, 2, 3, 4, 5].map(i => (
                   <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -99,7 +99,7 @@ export function About() {
                   </svg>
                 ))}
               </div>
-              <p className="font-serif font-bold text-lg leading-tight">"Exceptional stay, highly recommended!"</p>
+              <p className="font-serif font-bold text-base sm:text-lg leading-tight">"Exceptional stay, highly recommended!"</p>
             </div>
           </motion.div>
 

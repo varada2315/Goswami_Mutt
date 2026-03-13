@@ -9,7 +9,7 @@ interface HeroProps {
 
 export function Hero({ onBookClick }: HeroProps) {
   return (
-    <section id="home" className="relative h-screen min-h-[600px] w-full flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-[560px] sm:min-h-[640px] lg:min-h-[720px] w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -23,26 +23,26 @@ export function Hero({ onBookClick }: HeroProps) {
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/60 via-black/40 to-[#1A110B]/80" />
 
       {/* Content */}
-      <div className="relative z-20 max-w-5xl mx-auto px-4 text-center mt-16">
+      <div className="relative z-20 max-w-5xl mx-auto px-4 text-center mt-16 sm:mt-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="space-y-6"
         >
-          <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-4">
+          <div className="inline-flex items-center gap-3 px-3 py-1.5 sm:px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-4">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-white text-sm font-medium tracking-wide uppercase">Pilgrim Accommodations · Rameshwaram</span>
+            <span className="text-white text-xs sm:text-sm font-medium tracking-wide uppercase">Pilgrim Accommodations · Rameshwaram</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white text-shadow-lg leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white text-shadow-lg leading-tight">
             Welcome to <br/>
             <span className="text-primary text-shadow-none bg-clip-text text-transparent bg-gradient-to-r from-primary via-[#E5C158] to-primary">
               Goswami Mutt
             </span>
           </h1>
           
-          <p className="text-lg md:text-2xl text-white/90 font-light max-w-2xl mx-auto text-shadow-sm leading-relaxed">
+          <p className="text-base sm:text-lg md:text-2xl text-white/90 font-light max-w-2xl mx-auto text-shadow-sm leading-relaxed">
             Affordable and comfortable accommodations for pilgrims visiting the sacred Ramanathaswamy Temple, just 500 metres away.
           </p>
           
@@ -55,7 +55,7 @@ export function Hero({ onBookClick }: HeroProps) {
             <Button 
               size="lg" 
               variant="gold" 
-              className="w-full sm:w-auto text-lg px-10 py-6"
+              className="w-full sm:w-auto text-base sm:text-lg px-8 py-4 sm:px-10 sm:py-6"
               onClick={onBookClick}
             >
               Book Your Stay
@@ -63,7 +63,7 @@ export function Hero({ onBookClick }: HeroProps) {
             <Button 
               size="lg" 
               variant="outline" 
-              className="w-full sm:w-auto text-lg px-10 py-6 bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:text-white"
+              className="w-full sm:w-auto text-base sm:text-lg px-8 py-4 sm:px-10 sm:py-6 bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:text-white"
               onClick={() => {
                 document.querySelector('#rooms')?.scrollIntoView({ behavior: 'smooth' });
               }}
@@ -76,7 +76,7 @@ export function Hero({ onBookClick }: HeroProps) {
 
       {/* Scroll indicator */}
       <motion.div 
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white/70"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 hidden sm:flex flex-col items-center gap-2 text-white/70"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}

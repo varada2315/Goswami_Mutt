@@ -23,7 +23,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-[#1A110B] text-white/80 pt-20 pb-8 relative overflow-hidden">
+    <footer className="bg-[#1A110B] text-white/80 pt-16 sm:pt-20 pb-8 relative overflow-hidden">
       {/* Decorative Background */}
       <div 
         className="absolute inset-0 opacity-[0.03] mix-blend-overlay pointer-events-none"
@@ -35,7 +35,7 @@ export function Footer() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 mb-12 sm:mb-16">
           
           {/* Brand Col */}
           <div className="space-y-6">

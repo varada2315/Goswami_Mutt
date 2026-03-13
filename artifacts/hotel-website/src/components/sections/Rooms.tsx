@@ -74,16 +74,16 @@ export function Rooms({ onBookClick }: RoomsProps) {
   };
 
   return (
-    <section id="rooms" className="py-24 bg-secondary relative">
+    <section id="rooms" className="py-16 sm:py-20 lg:py-24 bg-secondary relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-4">
           <div className="inline-flex items-center gap-4 justify-center w-full">
             <span className="w-8 h-0.5 bg-primary"></span>
             <span className="text-primary font-medium tracking-wider uppercase text-sm">Accommodation</span>
             <span className="w-8 h-0.5 bg-primary"></span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">Our Rooms & Suites</h2>
-          <p className="text-muted-foreground text-lg">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-foreground">Our Rooms & Suites</h2>
+          <p className="text-muted-foreground text-base sm:text-lg">
             Choose from our range of thoughtfully designed rooms, each tailored to provide you with a relaxing and comfortable stay.
           </p>
         </div>
@@ -109,7 +109,7 @@ export function Rooms({ onBookClick }: RoomsProps) {
                 </div>
               )}
               
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-56 sm:h-64 overflow-hidden">
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors z-10" />
                 <img 
                   src={getAssetUrl(room.image)} 
@@ -127,7 +127,7 @@ export function Rooms({ onBookClick }: RoomsProps) {
                   {room.description}
                 </p>
 
-                <div className="grid grid-cols-2 gap-y-3 gap-x-2 mb-6 border-t border-b border-border/50 py-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-2 mb-6 border-t border-b border-border/50 py-4">
                   {room.amenities.map((amenity, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-sm text-foreground/80">
                       <span className="text-primary bg-primary/10 p-1.5 rounded-md">
@@ -138,14 +138,14 @@ export function Rooms({ onBookClick }: RoomsProps) {
                   ))}
                 </div>
 
-                <div className="flex items-center justify-between mt-auto">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-auto">
                   <div className="flex flex-col">
                     <span className="text-xs text-muted-foreground font-medium uppercase tracking-wider">Starting from</span>
                     <span className="text-2xl font-bold text-primary">{room.price}<span className="text-sm text-muted-foreground font-normal">/night</span></span>
                   </div>
                   <Button 
                     variant={room.featured ? "gold" : "outline"} 
-                    className={room.featured ? "" : "border-primary text-primary hover:bg-primary hover:text-white"}
+                    className={room.featured ? "w-full sm:w-auto" : "w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-white"}
                     onClick={() => onBookClick(room.name)}
                   >
                     Book Now

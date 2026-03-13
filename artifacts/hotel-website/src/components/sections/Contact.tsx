@@ -23,9 +23,9 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-secondary/50 relative overflow-hidden">
+    <section id="contact" className="py-16 sm:py-20 lg:py-24 bg-secondary/50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-8">
           
           {/* Contact Info */}
           <div className="lg:col-span-2 space-y-8">
@@ -34,8 +34,8 @@ export function Contact() {
                 <span className="w-8 h-0.5 bg-primary"></span>
                 <span className="text-primary font-medium tracking-wider uppercase text-sm">Reach Out</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">Contact Us</h2>
-              <p className="text-muted-foreground text-lg">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-foreground">Contact Us</h2>
+              <p className="text-muted-foreground text-base sm:text-lg">
                 Have questions or need assistance? We're always here to help make your stay perfect.
               </p>
             </div>
@@ -79,7 +79,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-3 bg-card p-8 md:p-10 rounded-2xl shadow-xl border border-border/50"
+            className="lg:col-span-3 bg-card p-6 sm:p-8 md:p-10 rounded-2xl shadow-xl border border-border/50"
           >
             <h3 className="font-serif text-2xl font-bold mb-6 text-foreground">Send us a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
